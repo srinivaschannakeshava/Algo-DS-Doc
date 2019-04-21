@@ -1,5 +1,7 @@
 # Algorithms and DataStructures
 
+## 
+
 ### Node
 - Basic building block
     - provides mechanism to contain piece of data.
@@ -84,3 +86,51 @@ Arrays have datalocality and performance w.r.t enqueue and dequeue
         - Efficient - The cost of generating hash must be balance with app needs
         - Secure - the cost of finding data that procuces a given hash is prohibitive
 > Hashing Alg ex:- Additive, Folding, CRC32, MD5, SHA-2   
+
+
+# Algorithms and DataStructures -2
+
+### Sorting algorithms
+
+### Bubble-Sort
+    - Simplest algorithm
+    - Each element is compared to its neigbour element and swapped if greater than the its neigbour.
+    - Repeat the same for remaining elements until there is no swap left .
+    - Performance of bubble sort 
+        - worst performance of bs of n elements is n^2(n square times of swap/comparisons)
+        - not an appropriate for large unsorted dataset
+        - best case performance is n no of swaps/comparison
+
+### Insertion sort
+    - Sorts each item in array as they are encountered
+    - Insertion sort works from left to right 
+        - every thing left of the item is known to be sorted
+        - everything right of the item is unsorted
+    - Performace of insertion sort
+        - similar to bubble sort - worst case n^2
+        - not appropriate for large set of data
+        - best case n moves
+
+### Selection sort
+    - Sort the data by finding smallest item and swapping it into the array in the first unsorted location
+    - Performance of Selection sort
+        - Worst case n^2
+        - Best case performace n^2
+
+### Merge Sort
+     - The arrays is recursively split in half
+     - when arrays is in group of 1 , it is reconstructed in sort order
+     - Each reconstructed array is mergged with the other half
+     - Performance of Merge sort
+        - Worst case (n log n) - comparisons are required
+        - appropriate for large dataset
+        - data spliting helps us with parallel comparison operations
+        - performance is fixed (n log n)
+        - space required - memory foot print does increase
+
+### Quick sort
+    - Divide and conquer algorithm
+    - Pick a pivot value and partition the array
+TODO: more indepth as its widely used sorting algo
+
+
