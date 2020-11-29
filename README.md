@@ -14,11 +14,10 @@
     - tail pointer
     - operations
         - add , remove, find , enumerate 
-    > Note : Linked list have efficient *add* operation. 
+    > Note : Linked list have efficient *add* operation as the add involves same process of updating a pointer unlike shifting of data like in arrays.
+    > Linked list remove from last operation is very costly as the size of list increase as each node need to be traveresed- so always prefer remove from head.  
 ### Doubly Linked list
-- Single chain of nodes
-    - it has head pointer 
-    - tail pointer
+- double chain of nodes
     - each node has link to previous and next node
         this reduces the cost of remove opperation found in singly linked list
 ### Stacks

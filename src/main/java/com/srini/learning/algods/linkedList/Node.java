@@ -1,6 +1,5 @@
-package com.srini.learning.algods.nodes;
+package com.srini.learning.algods.linkedList;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
@@ -11,9 +10,8 @@ import lombok.ToString;
 @Setter
 @RequiredArgsConstructor
 @ToString
-@AllArgsConstructor
-public class Node {
+public class Node<T> {
 	@NonNull
-	Object value;
-	Node node ;
+	T value;
+	Node<T> next;
 }
