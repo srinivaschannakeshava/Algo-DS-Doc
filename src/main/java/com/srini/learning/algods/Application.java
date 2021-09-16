@@ -3,10 +3,16 @@ package com.srini.learning.algods;
 import com.srini.learning.algods.linkedList.LinkedList;
 import com.srini.learning.algods.nodes.PlainNode;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class Application.
+ */
 public class Application {
 
 	/**
-	 * @param args
+	 * The main method.
+	 *
+	 * @param args the arguments
 	 */
 	public static void main(String[] args) {
 

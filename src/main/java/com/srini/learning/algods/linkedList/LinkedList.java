@@ -5,22 +5,49 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
+// TODO: Auto-generated Javadoc
+/**
+ * Gets the count.
+ *
+ * @return the count
+ */
 @Getter
 @Setter
+
+/**
+ * To string.
+ *
+ * @return the java.lang. string
+ */
 @ToString
 public class LinkedList<T> {
 
+	/** The head. */
 	@Setter(AccessLevel.NONE)
 	private Node<T> head;
+	
+	/** The tail. */
 	@Setter(AccessLevel.NONE)
 	private Node<T> tail;
+	
+	/** The count. */
 	@Setter(AccessLevel.NONE)
 	private int count = 0;
 
+	/**
+	 * Adds the first.
+	 *
+	 * @param value the value
+	 */
 	public void addFirst(T value) {
 		addFirst(new Node<T>(value));
 	}
 
+	/**
+	 * Adds the first.
+	 *
+	 * @param node the node
+	 */
 	private void addFirst(Node<T> node) {
 		Node<T> temp = head;
 		head = node;
@@ -31,10 +58,20 @@ public class LinkedList<T> {
 		}
 	}
 
+	/**
+	 * Adds the last.
+	 *
+	 * @param value the value
+	 */
 	public void addLast(T value) {
 		addLast(new Node<T>(value));
 	}
 
+	/**
+	 * Adds the last.
+	 *
+	 * @param node the node
+	 */
 	private void addLast(Node<T> node) {
 		Node<T> temp = tail;
 		tail = node;
@@ -45,6 +82,9 @@ public class LinkedList<T> {
 		count++;
 	}
 
+	/**
+	 * Removes the first.
+	 */
 	public void removeFirst() {
 		if (count != 0)
 			head = head.next;
@@ -53,6 +93,9 @@ public class LinkedList<T> {
 			tail = null;
 	}
 
+	/**
+	 * Removes the last.
+	 */
 	public void removeLast() {
 		if (count != 0) {
 			if (count == 1) {
@@ -70,6 +113,9 @@ public class LinkedList<T> {
 
 	}
 
+	/**
+	 * Enumerate.
+	 */
 	public void enumerate() {
 		Node<T> current = head;
 		while (current != null) {
@@ -79,6 +125,12 @@ public class LinkedList<T> {
 		System.out.println();
 	}
 
+	/**
+	 * Contains.
+	 *
+	 * @param value the value
+	 * @return true, if successful
+	 */
 	public boolean contains(T value) {
 		Node<T> current = head;
 		while (current != null) {
@@ -96,6 +148,12 @@ public class LinkedList<T> {
 //	3) many node 
 //	    a) remove first
 //	    b) remove middle or last - incase of last update the tail
+/**
+ * Removes the.
+ *
+ * @param value the value
+ * @return true, if successful
+ */
 //				
 	public boolean remove(T value) {
 		Node<T> previous = null;
@@ -120,10 +178,18 @@ public class LinkedList<T> {
 		return false;
 	}
 
+	/**
+	 * Size.
+	 *
+	 * @return the int
+	 */
 	public int size() {
 		return count;
 	}
 
+	/**
+	 * Clear.
+	 */
 	public void clear() {
 		head = null;
 		tail = null;
