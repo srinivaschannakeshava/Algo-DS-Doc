@@ -1,19 +1,24 @@
 plugins {
     id 'java-library'
     id 'java' 
-	id 'maven' 
 }
+repositories {
+    mavenCentral()
+} 
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
-	compile 'org.projectlombok:lombok:1.18.4'
+	compileOnly 'org.projectlombok:lombok:1.18.22'
+	annotationProcessor 'org.projectlombok:lombok:1.18.22'
+	implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.0'
+	implementation 'com.google.code.gson:gson:2.8.9'
+	
+	
+	testCompileOnly 'org.projectlombok:lombok:1.18.22'
+	testAnnotationProcessor 'org.projectlombok:lombok:1.18.22'
     testImplementation 'junit:junit:4.12'
 }
 
-repositories {
-    mavenCentral()
-
-} 
 

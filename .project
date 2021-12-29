@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
 	<name>AlgoAndData</name>
-	<comment>Project Algo-DS-Learn created by Buildship.</comment>
+	<comment>Project Algo-DS-Doc created by Buildship.</comment>
 	<projects>
 	</projects>
 	<buildSpec>
@@ -22,7 +22,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1606231171058</id>
+			<id>1633757397438</id>
 			<name></name>
 			<type>30</type>
 			<matcher>
